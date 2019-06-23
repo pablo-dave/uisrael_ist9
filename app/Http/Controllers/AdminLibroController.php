@@ -34,6 +34,9 @@
 			$this->col[] = ["label"=>"Autor","name"=>"autor"];
 			$this->col[] = ["label"=>"Año","name"=>"anio"];
 			$this->col[] = ["label"=>"Estado","name"=>"estado"];
+			$this->col[] = ["label"=>"Unidades","name"=>"unidades"];
+			$this->col[] = ["label"=>"Encuadernados","name"=>"encuadernados"];
+
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
@@ -42,6 +45,8 @@
 			$this->form[] = ['label'=>'Autor','name'=>'autor','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Año','name'=>'anio','type'=>'date','validation'=>'required','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Estado','name'=>'estado','type'=>'select','validation'=>'required','width'=>'col-sm-5','dataenum'=>'DISPONIBLE;NO DISPONIBLE'];
+			$this->form[] = ['label'=>'Unidades','type'=>'number','name'=>'unidades','validation'=>'required','width'=>'col-sm-5'];
+			$this->form[] = ['label'=>'Encuadernados','type'=>'number','name'=>'encuadernados','validation'=>'required','width'=>'col-sm-5'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM

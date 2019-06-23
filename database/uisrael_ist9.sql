@@ -452,14 +452,16 @@ CREATE TABLE `libro` (
   `autor` varchar(255) DEFAULT NULL,
   `anio` date DEFAULT NULL,
   `estado` varchar(255) DEFAULT NULL,
+  `unidades` int NOT NULL,
+  `encuadernados` int NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of libro
 -- ----------------------------
-INSERT INTO `libro` VALUES ('1', 'PADRE RICO PADRE POBRE', 'ROBERT KIYOSAKI', '2019-02-07', 'NO DISPONIBLE');
-INSERT INTO `libro` VALUES ('2', 'LO QUE EL VIENTO SE LLEVÓ', 'ANONIMO', '2019-06-13', 'DISPONIBLE');
+INSERT INTO `libro` VALUES ('1', 'PADRE RICO PADRE POBRE', 'ROBERT KIYOSAKI', '2019-02-07', 'NO DISPONIBLE',10,10);
+INSERT INTO `libro` VALUES ('2', 'LO QUE EL VIENTO SE LLEVÓ', 'ANONIMO', '2019-06-13', 'DISPONIBLE',10,10);
 
 -- ----------------------------
 -- Table structure for migrations
